@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  wmiwulien-store:
+    build: .
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    container_name: wmiwulien-store
+    environment:
+      - NODE_ENV=production 
