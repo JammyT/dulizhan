@@ -89,53 +89,53 @@ const Cart = () => {
               const hasAmazonLink = product?.amazonLink
               
               return (
-                <Card key={item.id}>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold text-gray-900 truncate">{item.name}</h3>
-                      <p className="text-gray-600">${item.price.toFixed(2)} each</p>
-                    </div>
+              <Card key={item.id}>
+                <div className="flex items-center space-x-4">
+                  <div className="w-20 h-20 rounded-lg overflow-hidden bg-gray-100">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-gray-900 truncate">{item.name}</h3>
+                    <p className="text-gray-600">${item.price.toFixed(2)} each</p>
+                  </div>
 
-                    <div className="flex items-center space-x-3">
-                      <div className="flex items-center border border-gray-300 rounded-lg">
-                        <button
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="p-1 hover:bg-gray-50"
-                          disabled={item.quantity <= 1}
-                        >
-                          <Minus className="h-4 w-4" />
-                        </button>
-                        <span className="px-3 py-1 font-medium">{item.quantity}</span>
-                        <button
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="p-1 hover:bg-gray-50"
-                        >
-                          <Plus className="h-4 w-4" />
-                        </button>
-                      </div>
-
-                      <div className="text-right min-w-0">
-                        <p className="font-semibold text-gray-900">
-                          ${(item.price * item.quantity).toFixed(2)}
-                        </p>
-                      </div>
-
+                  <div className="flex items-center space-x-3">
+                    <div className="flex items-center border border-gray-300 rounded-lg">
                       <button
-                        onClick={() => removeItem(item.id)}
-                        className="p-1 text-gray-400 hover:text-red-600"
+                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        className="p-1 hover:bg-gray-50"
+                        disabled={item.quantity <= 1}
                       >
-                        <X className="h-5 w-5" />
+                        <Minus className="h-4 w-4" />
+                      </button>
+                      <span className="px-3 py-1 font-medium">{item.quantity}</span>
+                      <button
+                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        className="p-1 hover:bg-gray-50"
+                      >
+                        <Plus className="h-4 w-4" />
                       </button>
                     </div>
+
+                    <div className="text-right min-w-0">
+                      <p className="font-semibold text-gray-900">
+                        ${(item.price * item.quantity).toFixed(2)}
+                      </p>
+                    </div>
+
+                    <button
+                      onClick={() => removeItem(item.id)}
+                      className="p-1 text-gray-400 hover:text-red-600"
+                    >
+                      <X className="h-5 w-5" />
+                    </button>
                   </div>
+                </div>
                   
                   {/* Amazon Link Button */}
                   {hasAmazonLink && (
@@ -157,7 +157,7 @@ const Cart = () => {
                       </a>
                     </div>
                   )}
-                </Card>
+              </Card>
               )
             })}
 
@@ -215,7 +215,7 @@ const Cart = () => {
                 ) : (
                   <Button className="w-full" size="lg" disabled>
                     No Amazon Links Available
-                  </Button>
+                </Button>
                 )}
                 <Button variant="outline" className="w-full">
                   Save for Later

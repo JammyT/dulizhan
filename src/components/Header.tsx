@@ -219,7 +219,7 @@ const Header = () => {
                       ))}
                     </div>
                   )}
-                </div>
+            </div>
               )}
             </form>
           </div>
@@ -344,7 +344,7 @@ const Header = () => {
                           ))}
                         </div>
                       )}
-                    </div>
+                </div>
                   )}
                 </form>
               </div>

@@ -404,11 +404,11 @@ const Products = () => {
                             </Button>
                           </a>
                         ) : (
-                          <Link to={`/products/${product.id}`}>
-                            <Button variant="outline" size="sm">
-                              View
-                            </Button>
-                          </Link>
+                        <Link to={`/products/${product.id}`}>
+                          <Button variant="outline" size="sm">
+                            View
+                          </Button>
+                        </Link>
                         )}
                       </div>
                     </div>
@@ -419,8 +419,8 @@ const Products = () => {
 
             {/* Pagination */}
             {totalPages > 1 && (
-              <div className="mt-12 flex justify-center">
-                <div className="flex items-center space-x-2">
+            <div className="mt-12 flex justify-center">
+              <div className="flex items-center space-x-2">
                   <Button 
                     variant="outline" 
                     size="sm"

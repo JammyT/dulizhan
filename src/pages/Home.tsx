@@ -59,10 +59,10 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/products">
-                  <Button size="lg" variant="accent" className="text-lg px-8">
-                    Shop Now
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                <Button size="lg" variant="accent" className="text-lg px-8">
+                  Shop Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
                 </Link>
                 <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary-600">
                   Learn More
@@ -222,11 +222,11 @@ const Home = () => {
                         </Button>
                       </a>
                     ) : (
-                      <Link to={`/products/${product.id}`}>
-                        <Button variant="outline" size="sm">
-                          View
-                        </Button>
-                      </Link>
+                    <Link to={`/products/${product.id}`}>
+                      <Button variant="outline" size="sm">
+                        View
+                      </Button>
+                    </Link>
                     )}
                   </div>
                 </div>
