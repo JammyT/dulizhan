@@ -279,10 +279,10 @@ const Terms = () => {
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <div className="space-y-2">
-                      <p><strong>Email:</strong> legal@risepektstore.com</p>
+                      <p><strong>Email:</strong> support@risepekt.com</p>
                       <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                       <p><strong>Address:</strong> 123 Business Ave, NY 10001</p>
-                      <p><strong>Legal Department:</strong> legal@risepektstore.com</p>
+                      <p><strong>Legal Department:</strong> support@risepekt.com</p>
                     </div>
                   </div>
                 </div>

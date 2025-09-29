@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       <div className="container">
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Company Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
@@ -40,21 +40,9 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
                 <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">Products</Link></li>
+                <li><Link to="/template" className="text-gray-400 hover:text-white transition-colors">Template</Link></li>
                 <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
                 <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-                <li><Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-              </ul>
-            </div>
-
-            {/* Customer Service */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold">Customer Service</h3>
-              <ul className="space-y-2">
-                <li><Link to="/help" className="text-gray-400 hover:text-white transition-colors">Help Center</Link></li>
-                <li><Link to="/shipping" className="text-gray-400 hover:text-white transition-colors">Shipping Info</Link></li>
-                <li><Link to="/returns" className="text-gray-400 hover:text-white transition-colors">Returns</Link></li>
-                <li><Link to="/track-order" className="text-gray-400 hover:text-white transition-colors">Track Order</Link></li>
-                <li><Link to="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link></li>
               </ul>
             </div>
 
@@ -64,15 +52,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-400" />
-                  <span className="text-gray-400">support@risepektstore.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary-400" />
-                  <span className="text-gray-400">+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-primary-400" />
-                  <span className="text-gray-400">123 Business Ave, NY 10001</span>
+                  <span className="text-gray-400">support@risepekt.com</span>
                 </div>
               </div>
               
