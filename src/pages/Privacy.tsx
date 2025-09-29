@@ -225,10 +225,10 @@ const Privacy = () => {
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <div className="space-y-2">
-                      <p><strong>Email:</strong> privacy@wmiwulienstore.com</p>
+                      <p><strong>Email:</strong> privacy@risepektstore.com</p>
                       <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                       <p><strong>Address:</strong> 123 Business Ave, NY 10001</p>
-                      <p><strong>Data Protection Officer:</strong> dpo@wmiwulienstore.com</p>
+                      <p><strong>Data Protection Officer:</strong> dpo@risepektstore.com</p>
                     </div>
                   </div>
                 </div>

@@ -55,7 +55,7 @@ const Home = () => {
                 <span className="block text-accent-200">Worldwide</span>
               </h1>
               <p className="text-xl mb-8 text-primary-100">
-                Discover amazing products from trusted Wmiwulien sellers. Quality guaranteed, fast shipping, and exceptional customer service.
+                Discover amazing products from trusted Risepekt sellers. Quality guaranteed, fast shipping, and exceptional customer service.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/products">

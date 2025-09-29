@@ -10,8 +10,9 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Categories from './pages/Categories'
 import Blog from './pages/Blog'
+import Template from './pages/Template'
+import TemplateDetail from './pages/TemplateDetail'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import Cookies from './pages/Cookies'
@@ -28,7 +29,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/products/:id" element={<ProductDetail />} />
-              <Route path="/categories" element={<Categories />} />
+              <Route path="/template" element={<Template />} />
+              <Route path="/template/:id" element={<TemplateDetail />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />

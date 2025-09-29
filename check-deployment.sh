@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Wmiwulien Store 部署状态检查脚本
+# Risepekt Store 部署状态检查脚本
 
-echo "🔍 开始检查 Wmiwulien Store 部署状态..."
+echo "🔍 开始检查 Risepekt Store 部署状态..."
 echo "=================================="
 
 # 颜色定义
@@ -35,7 +35,7 @@ fi
 
 # 2. 检查网站目录
 echo -e "${BLUE}📁 检查网站文件...${NC}"
-if [ -d "/var/www/wmiwulien-store" ]; then
+if [ -d "/var/www/risepekt-store" ]; then
     check_status 0 "网站目录存在"
     DIR_STATUS=0
 else
@@ -44,7 +44,7 @@ else
 fi
 
 # 3. 检查 index.html 文件
-if [ -f "/var/www/wmiwulien-store/index.html" ]; then
+if [ -f "/var/www/risepekt-store/index.html" ]; then
     check_status 0 "index.html 文件存在"
     HTML_STATUS=0
 else
@@ -53,7 +53,7 @@ else
 fi
 
 # 4. 检查 assets 目录
-if [ -d "/var/www/wmiwulien-store/assets" ]; then
+if [ -d "/var/www/risepekt-store/assets" ]; then
     check_status 0 "assets 目录存在"
     ASSETS_STATUS=0
 else
@@ -93,7 +93,7 @@ fi
 
 # 8. 检查文件权限
 echo -e "${BLUE}🔐 检查文件权限...${NC}"
-if [ -r "/var/www/wmiwulien-store/index.html" ]; then
+if [ -r "/var/www/risepekt-store/index.html" ]; then
     check_status 0 "文件权限正常"
     PERM_STATUS=0
 else
@@ -161,7 +161,7 @@ if [ $SUCCESS_RATE -lt 100 ]; then
     fi
     
     if [ $DIR_STATUS -ne 0 ] || [ $HTML_STATUS -ne 0 ]; then
-        echo -e "${YELLOW}• 重新部署: ./deploy.sh /var/www/wmiwulien-store${NC}"
+        echo -e "${YELLOW}• 重新部署: ./deploy.sh /var/www/risepekt-store${NC}"
     fi
     
     if [ $PORT_STATUS -ne 0 ]; then
@@ -169,7 +169,7 @@ if [ $SUCCESS_RATE -lt 100 ]; then
     fi
     
     if [ $PERM_STATUS -ne 0 ]; then
-        echo -e "${YELLOW}• 修复权限: sudo chown -R www-data:www-data /var/www/wmiwulien-store${NC}"
+        echo -e "${YELLOW}• 修复权限: sudo chown -R www-data:www-data /var/www/risepekt-store${NC}"
     fi
     
     echo -e "${YELLOW}• 查看详细日志: sudo tail -f /var/log/nginx/error.log${NC}"

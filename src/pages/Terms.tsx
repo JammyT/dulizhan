@@ -46,7 +46,7 @@ const Terms = () => {
                 </div>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    By accessing and using Wmiwulien Store's website and services, you accept and agree to be bound by the terms and provision of this agreement.
+                    By accessing and using Risepekt Store's website and services, you accept and agree to be bound by the terms and provision of this agreement.
                   </p>
                   <p>
                     If you do not agree to abide by the above, please do not use this service. These terms apply to all visitors, users, and others who access or use the service.
@@ -61,7 +61,7 @@ const Terms = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Description of Services</h2>
                 <div className="space-y-6">
                   <p className="text-gray-600">
-                    Wmiwulien Store provides an e-commerce platform that connects customers with quality products from Wmiwulien sellers worldwide. Our services include:
+                    Risepekt Store provides an e-commerce platform that connects customers with quality products from Risepekt sellers worldwide. Our services include:
                   </p>
                   <ul className="list-disc list-inside space-y-3 text-gray-600">
                     <li>Online product catalog and shopping experience</li>
@@ -219,7 +219,7 @@ const Terms = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-3">Our Rights</h3>
                     <p className="text-gray-600 mb-4">
-                      The service and its original content, features, and functionality are owned by Wmiwulien Store and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+                      The service and its original content, features, and functionality are owned by Risepekt Store and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
                     </p>
                   </div>
                   <div>
@@ -241,7 +241,7 @@ const Terms = () => {
                 </div>
                 <div className="space-y-6">
                   <p className="text-gray-600">
-                    In no event shall Wmiwulien Store, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+                    In no event shall Risepekt Store, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
                   </p>
                   <ul className="list-disc list-inside space-y-3 text-gray-600">
                     <li>Your use or inability to use the service</li>
@@ -279,10 +279,10 @@ const Terms = () => {
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <div className="space-y-2">
-                      <p><strong>Email:</strong> legal@wmiwulienstore.com</p>
+                      <p><strong>Email:</strong> legal@risepektstore.com</p>
                       <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                       <p><strong>Address:</strong> 123 Business Ave, NY 10001</p>
-                      <p><strong>Legal Department:</strong> legal@wmiwulienstore.com</p>
+                      <p><strong>Legal Department:</strong> legal@risepektstore.com</p>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-# 🚀 Wmiwulien Store 快速部署指南
+# 🚀 Risepekt Store 快速部署指南
 
 ## 方案一：一键部署到云服务器（推荐）
 
@@ -17,23 +17,23 @@ sudo apt install nginx git curl -y
 ### 2. 部署项目
 ```bash
 # 克隆项目（或上传项目文件）
-git clone https://github.com/your-username/wmiwulien-store.git
-cd wmiwulien-store
+git clone https://github.com/your-username/risepekt-store.git
+cd risepekt-store
 
 # 运行一键部署脚本
-./deploy.sh /var/www/wmiwulien-store
+./deploy.sh /var/www/risepekt-store
 ```
 
 ### 3. 配置域名
 ```bash
 # 编辑 Nginx 配置
-sudo nano /etc/nginx/sites-available/wmiwulien-store
+sudo nano /etc/nginx/sites-available/risepekt-store
 
 # 将 server_name 改为您的域名
 server_name your-domain.com www.your-domain.com;
 
 # 启用站点
-sudo ln -s /etc/nginx/sites-available/wmiwulien-store /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/risepekt-store /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl restart nginx
 ```
@@ -111,15 +111,15 @@ location / {
 ### 问题2：静态资源加载失败
 **解决**：检查文件权限
 ```bash
-sudo chown -R www-data:www-data /var/www/wmiwulien-store
-sudo chmod -R 755 /var/www/wmiwulien-store
+sudo chown -R www-data:www-data /var/www/risepekt-store
+sudo chmod -R 755 /var/www/risepekt-store
 ```
 
 ### 问题3：Docker 容器无法启动
 **解决**：检查端口占用
 ```bash
 sudo netstat -tlnp | grep :80
-docker logs wmiwulien-store
+docker logs risepekt-store
 ```
 
 ## 📊 部署后检查清单
@@ -175,8 +175,8 @@ location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
 
 1. 查看详细部署文档：`DEPLOYMENT.md`
 2. 检查服务器日志：`sudo tail -f /var/log/nginx/error.log`
-3. 检查应用日志：`docker logs wmiwulien-store`
+3. 检查应用日志：`docker logs risepekt-store`
 
 ---
 
-**🎉 恭喜！您的 Wmiwulien Store 已成功部署！** 
+**🎉 恭喜！您的 Risepekt Store 已成功部署！** 

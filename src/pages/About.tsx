@@ -18,7 +18,7 @@ const About = () => {
         <div className="container">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About Wmiwulien Store
+              About Risepekt Store
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
               We are passionate about providing high-quality products and exceptional customer service to customers worldwide.
@@ -116,7 +116,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Story</h2>
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="mb-6">
-                Wmiwulien Store was founded with a simple mission: to provide customers with 
+                Risepekt Store was founded with a simple mission: to provide customers with 
                 high-quality products at competitive prices. What started as a small online 
                 store has grown into a trusted marketplace serving customers worldwide.
               </p>
@@ -145,7 +145,7 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet the dedicated professionals who make Wmiwulien Store possible
+              Meet the dedicated professionals who make Risepekt Store possible
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -197,7 +197,7 @@ const About = () => {
               Ready to Shop with Us?
             </h2>
             <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
-              Discover our amazing collection of products and experience the Wmiwulien Store difference.
+              Discover our amazing collection of products and experience the Risepekt Store difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/products">

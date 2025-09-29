@@ -1,8 +1,8 @@
-# Wmiwulien Store 部署文档
+# Risepekt Store 部署文档
 
 ## 项目概述
 
-Wmiwulien Store 是一个基于 React + TypeScript + Vite 的电商网站，集成了亚马逊商品链接功能。
+Risepekt Store 是一个基于 React + TypeScript + Vite 的电商网站，集成了亚马逊商品链接功能。
 
 ## 技术栈
 
@@ -47,13 +47,13 @@ sudo yum install nginx
 
 ##### 2.2 配置 Nginx
 
-创建配置文件 `/etc/nginx/sites-available/wmiwulien-store`:
+创建配置文件 `/etc/nginx/sites-available/risepekt-store`:
 
 ```nginx
 server {
     listen 80;
     server_name your-domain.com www.your-domain.com;
-    root /var/www/wmiwulien-store;
+    root /var/www/risepekt-store;
     index index.html;
 
     # 启用 gzip 压缩
@@ -86,17 +86,17 @@ server {
 
 ```bash
 # 创建网站目录
-sudo mkdir -p /var/www/wmiwulien-store
+sudo mkdir -p /var/www/risepekt-store
 
 # 复制构建文件
-sudo cp -r dist/* /var/www/wmiwulien-store/
+sudo cp -r dist/* /var/www/risepekt-store/
 
 # 设置权限
-sudo chown -R www-data:www-data /var/www/wmiwulien-store
-sudo chmod -R 755 /var/www/wmiwulien-store
+sudo chown -R www-data:www-data /var/www/risepekt-store
+sudo chmod -R 755 /var/www/risepekt-store
 
 # 启用站点
-sudo ln -s /etc/nginx/sites-available/wmiwulien-store /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/risepekt-store /etc/nginx/sites-enabled/
 
 # 测试配置
 sudo nginx -t
@@ -185,10 +185,10 @@ server {
 
 ```bash
 # 构建镜像
-docker build -t wmiwulien-store .
+docker build -t risepekt-store .
 
 # 运行容器
-docker run -d -p 80:80 --name wmiwulien-store wmiwulien-store
+docker run -d -p 80:80 --name risepekt-store risepekt-store
 
 # 使用 Docker Compose（可选）
 ```
@@ -198,7 +198,7 @@ docker run -d -p 80:80 --name wmiwulien-store wmiwulien-store
 ```yaml
 version: '3.8'
 services:
-  wmiwulien-store:
+  risepekt-store:
     build: .
     ports:
       - "80:80"
@@ -282,7 +282,7 @@ jobs:
 创建 `.env.production`:
 
 ```env
-VITE_APP_TITLE=Wmiwulien Store
+VITE_APP_TITLE=Risepekt Store
 VITE_APP_DESCRIPTION=Your trusted source for quality products
 VITE_APP_URL=https://your-domain.com
 ```
@@ -401,10 +401,10 @@ BACKUP_DIR="/backup/$(date +%Y%m%d)"
 mkdir -p $BACKUP_DIR
 
 # 备份网站文件
-cp -r /var/www/wmiwulien-store $BACKUP_DIR/
+cp -r /var/www/risepekt-store $BACKUP_DIR/
 
 # 备份 Nginx 配置
-cp /etc/nginx/sites-available/wmiwulien-store $BACKUP_DIR/
+cp /etc/nginx/sites-available/risepekt-store $BACKUP_DIR/
 
 echo "Backup completed: $BACKUP_DIR"
 ```
@@ -481,7 +481,7 @@ ssl_prefer_server_ciphers off;
 ```bash
 #!/bin/bash
 
-echo "开始部署 Wmiwulien Store..."
+echo "开始部署 Risepekt Store..."
 
 # 拉取最新代码
 git pull origin main
@@ -493,15 +493,15 @@ npm install
 npm run build
 
 # 备份当前版本
-sudo cp -r /var/www/wmiwulien-store /var/www/wmiwulien-store.backup.$(date +%Y%m%d_%H%M%S)
+sudo cp -r /var/www/risepekt-store /var/www/risepekt-store.backup.$(date +%Y%m%d_%H%M%S)
 
 # 部署新版本
-sudo rm -rf /var/www/wmiwulien-store/*
-sudo cp -r dist/* /var/www/wmiwulien-store/
+sudo rm -rf /var/www/risepekt-store/*
+sudo cp -r dist/* /var/www/risepekt-store/
 
 # 设置权限
-sudo chown -R www-data:www-data /var/www/wmiwulien-store
-sudo chmod -R 755 /var/www/wmiwulien-store
+sudo chown -R www-data:www-data /var/www/risepekt-store
+sudo chmod -R 755 /var/www/risepekt-store
 
 # 重启 Nginx
 sudo systemctl restart nginx
@@ -519,7 +519,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-BACKUP_DIR="/var/www/wmiwulien-store.backup.$1"
+BACKUP_DIR="/var/www/risepekt-store.backup.$1"
 
 if [ ! -d "$BACKUP_DIR" ]; then
     echo "备份目录不存在: $BACKUP_DIR"
@@ -532,12 +532,12 @@ echo "回滚到版本: $1"
 sudo systemctl stop nginx
 
 # 恢复备份
-sudo rm -rf /var/www/wmiwulien-store
-sudo cp -r $BACKUP_DIR /var/www/wmiwulien-store
+sudo rm -rf /var/www/risepekt-store
+sudo cp -r $BACKUP_DIR /var/www/risepekt-store
 
 # 设置权限
-sudo chown -R www-data:www-data /var/www/wmiwulien-store
-sudo chmod -R 755 /var/www/wmiwulien-store
+sudo chown -R www-data:www-data /var/www/risepekt-store
+sudo chmod -R 755 /var/www/risepekt-store
 
 # 启动 Nginx
 sudo systemctl start nginx

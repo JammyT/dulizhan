@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Wmiwulien Store 自动化部署脚本
+# Risepekt Store 自动化部署脚本
 
 set -e  # 遇到错误时退出
 
-echo "🚀 开始部署 Wmiwulien Store..."
+echo "🚀 开始部署 Risepekt Store..."
 
 # 检查是否在项目根目录
 if [ ! -f "package.json" ]; then
@@ -68,7 +68,7 @@ if [ ! -z "$1" ]; then
     echo "🌐 网站地址: http://$(hostname -I | awk '{print $1}')"
 else
     echo "📁 构建文件已生成在 dist/ 目录"
-    echo "💡 提示: 运行 ./deploy.sh /var/www/wmiwulien-store 进行自动部署"
+    echo "💡 提示: 运行 ./deploy.sh /var/www/risepekt-store 进行自动部署"
 fi
 
 echo "🎉 部署脚本执行完成!" 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
+import { Mail, Send, CheckCircle } from 'lucide-react'
 import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 
@@ -67,60 +67,18 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-8 w-8 text-primary-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-                <p className="text-gray-600 mb-2">We'll respond within 24 hours</p>
-                <a href="mailto:support@wmiwulien.com" className="text-primary-600 hover:text-primary-700">
-                  support@wmiwulien.com
-                </a>
-              </div>
-            </Card>
-            
-            <Card>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="h-8 w-8 text-primary-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                <p className="text-gray-600 mb-2">Mon-Fri from 8am to 6pm</p>
-                <a href="tel:+1-800-123-4567" className="text-primary-600 hover:text-primary-700">
-                  +1 (800) 123-4567
-                </a>
-              </div>
-            </Card>
-            
-            <Card>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="h-8 w-8 text-primary-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-                <p className="text-gray-600 mb-2">Our main office</p>
-                <p className="text-primary-600">
-                  123 Business Street<br />
-                  New York, NY 10001
-                </p>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form & Map */}
+      {/* Contact Section - Left Right Layout */}
       <section className="py-16 bg-gray-50">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Left Side - Contact Form (2/3 width) */}
+            <div className="lg:col-span-2">
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Send us a Message</h2>
+                <p className="text-gray-600">
+                  Have a question or need assistance? We're here to help! Send us a message and we'll get back to you within 24 hours.
+                </p>
+              </div>
               <Card>
                 {isSubmitted ? (
                   <div className="text-center py-8">
@@ -226,64 +184,53 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* Map & Additional Info */}
-            <div className="space-y-8">
-              {/* Map Placeholder */}
+            {/* Right Side - Contact Info (1/3 width) */}
+            <div className="space-y-6">
+              {/* Email Card */}
               <Card>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Our Location</h3>
-                <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-600">Interactive Map</p>
-                    <p className="text-sm text-gray-500">123 Business Street, New York, NY 10001</p>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Mail className="h-8 w-8 text-primary-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+                  <p className="text-gray-600 text-sm mb-3">We'll respond within 24 hours</p>
+                  <a 
+                    href="mailto:support@risepekt.com" 
+                    className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
+                  >
+                    support@risepekt.com
+                  </a>
+                </div>
+              </Card>
+
+              {/* Quick Info Card */}
+              <Card>
+                <h4 className="font-semibold text-gray-900 mb-4">Quick Information</h4>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Response Time</span>
+                    <span className="text-gray-900 font-medium">24 hours</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Support Hours</span>
+                    <span className="text-gray-900 font-medium">24/7</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Languages</span>
+                    <span className="text-gray-900 font-medium">English</span>
                   </div>
                 </div>
               </Card>
 
-              {/* Business Hours */}
+              {/* Help Topics Card */}
               <Card>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Business Hours</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <Clock className="h-5 w-5 text-primary-600 mr-3" />
-                      <span className="text-gray-700">Monday - Friday</span>
-                    </div>
-                    <span className="text-gray-600">8:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <Clock className="h-5 w-5 text-primary-600 mr-3" />
-                      <span className="text-gray-700">Saturday</span>
-                    </div>
-                    <span className="text-gray-600">9:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <Clock className="h-5 w-5 text-primary-600 mr-3" />
-                      <span className="text-gray-700">Sunday</span>
-                    </div>
-                    <span className="text-gray-600">Closed</span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* FAQ Quick Links */}
-              <Card>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Help</h3>
-                <div className="space-y-3">
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
-                    How do I track my order?
-                  </a>
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
-                    What is your return policy?
-                  </a>
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
-                    How can I change my shipping address?
-                  </a>
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
-                    Do you ship internationally?
-                  </a>
+                <h4 className="font-semibold text-gray-900 mb-4">Common Topics</h4>
+                <div className="space-y-2">
+                  <div className="text-sm text-gray-600">• Product Questions</div>
+                  <div className="text-sm text-gray-600">• Order Support</div>
+                  <div className="text-sm text-gray-600">• Technical Issues</div>
+                  <div className="text-sm text-gray-600">• Template Downloads</div>
+                  <div className="text-sm text-gray-600">• Account Management</div>
                 </div>
               </Card>
             </div>

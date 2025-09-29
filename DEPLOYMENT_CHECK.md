@@ -1,4 +1,4 @@
-# 🔍 Wmiwulien Store 部署状态检查指南
+# 🔍 Risepekt Store 部署状态检查指南
 
 ## 1. 基础服务状态检查
 
@@ -18,14 +18,14 @@ sudo netstat -tlnp | grep :443
 ### 检查网站文件
 ```bash
 # 检查网站目录是否存在
-ls -la /var/www/wmiwulien-store/
+ls -la /var/www/risepekt-store/
 
 # 检查关键文件
-ls -la /var/www/wmiwulien-store/index.html
-ls -la /var/www/wmiwulien-store/assets/
+ls -la /var/www/risepekt-store/index.html
+ls -la /var/www/risepekt-store/assets/
 
 # 检查文件权限
-ls -la /var/www/wmiwulien-store/ | head -10
+ls -la /var/www/risepekt-store/ | head -10
 ```
 
 ## 2. 网站访问测试
@@ -152,16 +152,16 @@ sudo nginx -t
 sudo nginx -T | grep -A 20 "server {"
 
 # 检查配置文件
-sudo cat /etc/nginx/sites-available/wmiwulien-store
+sudo cat /etc/nginx/sites-available/risepekt-store
 ```
 
 ### 检查文件权限
 ```bash
 # 检查网站目录权限
-ls -ld /var/www/wmiwulien-store/
+ls -ld /var/www/risepekt-store/
 
 # 检查文件所有者
-ls -la /var/www/wmiwulien-store/ | head -5
+ls -la /var/www/risepekt-store/ | head -5
 
 # 检查 Nginx 用户
 ps aux | grep nginx | grep -v grep
@@ -184,29 +184,29 @@ sudo ufw status
 ### 问题2：页面显示 404
 ```bash
 # 检查文件是否存在
-ls -la /var/www/wmiwulien-store/index.html
+ls -la /var/www/risepekt-store/index.html
 
 # 检查 Nginx 配置中的 root 路径
-sudo grep "root" /etc/nginx/sites-available/wmiwulien-store
+sudo grep "root" /etc/nginx/sites-available/risepekt-store
 
 # 检查文件权限
-ls -la /var/www/wmiwulien-store/
+ls -la /var/www/risepekt-store/
 ```
 
 ### 问题3：静态资源加载失败
 ```bash
 # 检查 assets 目录
-ls -la /var/www/wmiwulien-store/assets/
+ls -la /var/www/risepekt-store/assets/
 
 # 检查文件权限
-sudo chown -R www-data:www-data /var/www/wmiwulien-store/
-sudo chmod -R 755 /var/www/wmiwulien-store/
+sudo chown -R www-data:www-data /var/www/risepekt-store/
+sudo chmod -R 755 /var/www/risepekt-store/
 ```
 
 ### 问题4：页面刷新后 404
 ```bash
 # 检查 Nginx 配置是否包含 React Router 支持
-sudo grep -A 5 "try_files" /etc/nginx/sites-available/wmiwulien-store
+sudo grep -A 5 "try_files" /etc/nginx/sites-available/risepekt-store
 ```
 
 ## 8. 自动化检查脚本
@@ -229,7 +229,7 @@ fi
 
 # 检查网站文件
 echo "📁 检查网站文件..."
-if [ -f "/var/www/wmiwulien-store/index.html" ]; then
+if [ -f "/var/www/risepekt-store/index.html" ]; then
     echo "✅ index.html 文件存在"
 else
     echo "❌ index.html 文件不存在"
@@ -263,7 +263,7 @@ echo "🎉 部署检查完成！网站应该可以正常访问了。"
 # 一键检查所有状态
 echo "=== Nginx 状态 ===" && systemctl status nginx --no-pager -l
 echo "=== 端口监听 ===" && netstat -tlnp | grep :80
-echo "=== 网站文件 ===" && ls -la /var/www/wmiwulien-store/ | head -5
+echo "=== 网站文件 ===" && ls -la /var/www/risepekt-store/ | head -5
 echo "=== 本地测试 ===" && curl -I http://localhost
 echo "=== 错误日志 ===" && sudo tail -5 /var/log/nginx/error.log
 ```

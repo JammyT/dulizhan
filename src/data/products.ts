@@ -148,7 +148,7 @@ export const products: Product[] =[
     description: '3500 Pcs 1 Inch Size Stickers for Clothing XS-XXXL, Self Adhesive Clothing Shirt Size Stickers Rolls, Round Black Apparel Size Labels Stickers for T-Shirts Trousers Skirt Retail & Home.',
     features: [
       'Package Including - 7 sizes of 3500 pcs 1 inch size stickers for clothing (XS, S, M, L, XL, XXL, XXXL), each size has 500 stickers, enough to meet all your needs.',
-      'Premium Material - The Wmiwulien clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
+      'Premium Material - The Risepekt clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
       'Versatile & Organize - Self-Adhesive size stickers work finely on fabric, plastic packaging, paper and most surfaces. It is a good way to organize and quickly view the size in the inventory.',
       'Easy to Use - Simply easy to peel and stick, then sell! Stickers are round, ensuring they are easy to peel off of the adhesive roll.',
       'Long Lasting - The majority of these size stickers are safe to be put on clothing or fabric, and many are made with environment-friendly ink that will last for a long time. Permanent adhesive are made from durable coating and adhere firmly which can stick on most surfaces, so you do not have to be afraid that it will come down.'
@@ -197,7 +197,7 @@ export const products: Product[] =[
     description: '2500 Pcs 1 Inch Size Stickers for Clothing S-XXL, Self Adhesive Round Clothing Shirt Labels Rolls for T-Shirts Trousers Skirt Retail & Home.',
     features: [
       'Package Including - 5 sizes of 2500 pcs 1 inch size stickers for clothing (S, M, L, XL, XXL), each size has 500 stickers, enough to meet all your needs.',
-      'Premium Material - The Wmiwulien clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
+      'Premium Material - The Risepekt clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
       'Versatile & Organize - Self-Adhesive size stickers work finely on fabric, plastic packaging, paper and most surfaces. It is a good way to organize and quickly view the size in the inventory.',
       'Easy to Use - Simply easy to peel and stick, then sell! Stickers are round, ensuring they are easy to peel off of the adhesive roll.',
       'Long Lasting - The majority of these size stickers are safe to be put on clothing or fabric, and many are made with environment-friendly ink that will last for a long time. Permanent adhesive are made from durable coating and adhere firmly which can stick on most surfaces, so you do not have to be afraid that it will come down.'
@@ -247,9 +247,9 @@ export const products: Product[] =[
     features: [
       'Seven clear size stickers strips rolls include seven distinct sizes: X-Small, Small, Medium, Large, X-Large, XX-Large, and XXX-Large, with 250 labels per roll. This 1750-label set is designed to meet diverse labeling requirements with versatile sizing options.',
       'Transparent size stickers strips feature bold black lettering on a white background, offering a sleek and highly visible design. Each strip measures 1.25” x 5”, perfectly sized for labeling shirts, sweaters, coats, trousers, and more. Effortlessly identify the right size at a glance with this intuitive classification solution.',
-      'Wmiwulien size strips labels feature high-strength adhesive backing, ensuring secure attachment to shirts, sweaters, pants, and most surfaces. The premium glue formula offers durable adhesion that resists peeling while remaining fabric-safe, no risk of damage or residue on clothing.',
+      'Risepekt size strips labels feature high-strength adhesive backing, ensuring secure attachment to shirts, sweaters, pants, and most surfaces. The premium glue formula offers durable adhesion that resists peeling while remaining fabric-safe, no risk of damage or residue on clothing.',
       'These clothing size strips peel off smoothly without leaving any sticky residue, making them ideal for temporarily labeling clothing sizes. Perfect for retail use, they let you inform customers about sizing while keeping products damage-free.',
-      'Wmiwulien prioritizes safety in both production and use, selecting top-grade plastics for our size strip stickers. Engineered to resist water, oil, and tearing, these odorless labels combine durability with peace of mind, shop with confidence!'
+      'Risepekt prioritizes safety in both production and use, selecting top-grade plastics for our size strip stickers. Engineered to resist water, oil, and tearing, these odorless labels combine durability with peace of mind, shop with confidence!'
     ],
     specifications: {
       'Color': 'Clear',
@@ -292,10 +292,10 @@ export const products: Product[] =[
     rating: 4.9,
     reviews: 112,
     category: 'Clothing Size Stickers',
-    description: '4200 Pcs Size Stickers for Clothing XS-XXXL, Wmiwulien 1/2" 28 Sheets Self Adhesive Labels, Round Black Apparel Size Label Stickers for T-Shirts Trousers Skirt Retail Home.',
+    description: '4200 Pcs Size Stickers for Clothing XS-XXXL, Risepekt 1/2" 28 Sheets Self Adhesive Labels, Round Black Apparel Size Label Stickers for T-Shirts Trousers Skirt Retail Home.',
     features: [
       'Package Including - 7 sizes of 28 sheets 4200 pcs 0.5 inch size stickers for clothing (XS, S, M, L, XL, XXL, 3XL), XS-2 Sheets-300 Pcs / S-5 Sheets-750 pcs/ M-5 Sheets-750 pcs/ L-7 Sheets-1050 pcs/ XL-5 Sheets-750 pcs/ 2XL-2 Sheets-300 pcs / 3XL-2 Sheets-300 pcs, enough to meet all your needs.',
-      'Premium Material - The Wmiwulien clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
+      'Premium Material - The Risepekt clothing size stickers are made of high-quality paper, and it will not stain or damage the fabric.',
       'Versatile & Organize - Self-Adhesive size stickers work finely on fabric, plastic packaging, paper and most surfaces. It is a good way to organize and quickly view the size in the inventory.',
       'Easy to Use - Simply easy to peel and stick, then sell! Stickers are round, ensuring they are easy to peel off of the adhesive roll.',
       'Long Lasting - The majority of these size stickers are safe to be put on clothing or fabric, and many are made with environment-friendly ink that will last for a long time. Permanent adhesive are made from durable coating and adhere firmly which can stick on most surfaces, so you do not have to be afraid that it will come down.'

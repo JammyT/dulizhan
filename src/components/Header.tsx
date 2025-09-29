@@ -111,7 +111,7 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
-    { name: 'Categories', href: '/categories' },
+    { name: 'Template', href: '/template' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ]
@@ -126,7 +126,7 @@ const Header = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">AS</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Wmiwulien Store</span>
+              <span className="text-xl font-bold text-gray-900">Risepekt Store</span>
             </Link>
           </div>
 

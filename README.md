@@ -1,4 +1,4 @@
-# Wmiwulien Store - 海外独立站
+# Risepekt Store - 海外独立站
 
 一个现代化的亚马逊卖家海外独立站，采用React + TypeScript + Tailwind CSS构建，提供完整的电商功能。
 

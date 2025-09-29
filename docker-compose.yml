@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  wmiwulien-store:
+  risepekt-store:
     build: .
     ports:
       - "80:80"
     restart: unless-stopped
-    container_name: wmiwulien-store
+    container_name: risepekt-store
     environment:
       - NODE_ENV=production 

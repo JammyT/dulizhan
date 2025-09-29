@@ -13,10 +13,10 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-accent-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">AS</span>
                 </div>
-                <span className="text-xl font-bold">Wmiwulien Store</span>
+                <span className="text-xl font-bold">Risepekt Store</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Your trusted partner for premium products worldwide. We bring you quality items directly from Wmiwulien sellers to customers globally.
+                Your trusted partner for premium products worldwide. We bring you quality items directly from Risepekt sellers to customers globally.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
@@ -64,7 +64,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-400" />
-                  <span className="text-gray-400">support@wmiwulienstore.com</span>
+                  <span className="text-gray-400">support@risepektstore.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary-400" />
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Wmiwulien Store. All rights reserved.
+              © 2024 Risepekt Store. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>

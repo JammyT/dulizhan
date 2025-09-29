@@ -18,7 +18,7 @@ const Blog = () => {
       title: "New Product Launch: Premium Cable Management Solutions",
       excerpt: "We're excited to announce our latest line of professional cable management solutions designed for modern workspaces...",
       content: "Our new cable management line includes innovative features like self-adhesive backing, tear-resistant materials, and vibrant color coding options. These products are perfect for IT professionals, office managers, and anyone looking to organize their workspace efficiently.",
-      author: "Wmiwulien Team",
+      author: "Risepekt Team",
       date: "2024-01-15",
       category: "Product Updates",
       readTime: "3 min read",
@@ -52,8 +52,8 @@ const Blog = () => {
     {
       id: 4,
       title: "Sustainability in Business: Our Commitment to Green Practices",
-      excerpt: "Discover how Wmiwulien Store is leading the way in sustainable business practices and environmental responsibility...",
-      content: "At Wmiwulien Store, we believe that business success and environmental responsibility go hand in hand. We've implemented comprehensive sustainability initiatives across our operations, from eco-friendly packaging to energy-efficient facilities.",
+      excerpt: "Discover how Risepekt Store is leading the way in sustainable business practices and environmental responsibility...",
+      content: "At Risepekt Store, we believe that business success and environmental responsibility go hand in hand. We've implemented comprehensive sustainability initiatives across our operations, from eco-friendly packaging to energy-efficient facilities.",
       author: "Sustainability Team",
       date: "2023-12-28",
       category: "Company News",
@@ -107,7 +107,7 @@ const Blog = () => {
               Our Blog
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Stay updated with the latest news, product launches, industry insights, and helpful tips from the Wmiwulien Store team.
+              Stay updated with the latest news, product launches, industry insights, and helpful tips from the Risepekt Store team.
             </p>
           </div>
         </div>
